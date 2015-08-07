@@ -1,7 +1,7 @@
 # Set language to english to obtain required spelling for days
 Sys.setlocale("LC_TIME", "en_US")
 
-#Read data
+#Read data 
 data = read.table("./data/household_power_consumption.txt",sep=";", header = T)
 #convert date and time data
 data$datetime = paste(data$Date, data$Time, sep= " ")
